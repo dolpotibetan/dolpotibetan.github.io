@@ -41,8 +41,23 @@ h3 { font-size: 2rem; margin-bottom: 20px; text-align: center; }
 
 /* Media */
 .bg-light { background: #f9f9f9; padding: 60px 0; }
-.video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; }
-.video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* This creates a 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000; /* Shows black while loading */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
 
 /* Footer */
 footer { text-align: center; padding: 40px 0; background: #333; color: #ccc; font-size: 0.9rem; }
