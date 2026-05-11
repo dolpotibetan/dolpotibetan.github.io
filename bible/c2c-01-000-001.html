@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>000 ཕོ་ཉ་བཀོད་པ། 1</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+// Audio start and stop times
+var startTime = 0;
+var stopTime  = 0;
+
+var audio = document.getElementById("audio");
+audio.addEventListener('canplaythrough', function() {
+   if (this.currentTime < startTime) {
+      this.currentTime = startTime;
+   }
+});
+
+audio.addEventListener('timeupdate', function() {
+   if (this.currentTime > stopTime) {
+      this.pause();
+      this.currentTime = startTime;
+   }
+});
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 1 }];
+var hasIntro = false;
+var baseRef  = "c2c-01-000-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="content">
+<img src="images/000_photo.jpg" />
+
+<div class="b"></div>
+<div class="b"></div>
+<div class="p"></div>
+<div class="m">ད་སྔེན་མ་སྔེན་མ་དཀོན་མཆོག་ཁོང་རང་པ་རྐྱང་མ་གཏོགས་འཇིག་རྟེན་ཟིན་ཅི་གང་མེད་དི་སྟོང་པ་སྟོང་ཀྱང་ཡིན་དིག  དཀོན་མཆོག་ཁོང་རང་ནི་ཐུགས་ཉིད་འོད་ཡོད་ཞིག་ཡིན་དི་མ་ཟད། བསྐལ་པ་མ་ཆགས་པའི་སྔེན་ནས་ཕེན་རང་བཞིན་མེད་འོད་དིག སུས་ཟང་བསྐྲུན་བསྐྲུན་མ་དིག སྐྲུན་མཛད་མཁན་ཡེ་རེ་དཀོན་མཆོག་ཁོང་རང་རང་ཡིན་དིག ཡང་དེ་མ་ཟད། ཁོང་གིས་སེམས་ཉིད་གཞན་མ་ཟང་བསྐྲུན་མཛད་གནང་སྟེ། རང་གི་ཞབས་ཕྱི་ལེ་བོར་གནང་པི་དིག སེམས་ཉིད་དེའི་མིང་ལེ་ཕོ་ཉ་ཟིན་འོད་དི་མ་ཟད། ཕོ་ཉ་དེ་ཀྱ་དཀོན་མཆོག་དིང་སྐྱེན་ལེ་ཞིང་ཁམས་ལེ་སྡོད་གྱོ་འོད་དིག</div>
+<div class="m">ཁོང་གིས་འུས་རྩིས་མི་ཐུབ་རྒྱུ་མེད་མེད་མང་པོ་ཞིག་བསྐྲུན་གནང་འོད་དིག ཡང་ཁོང་གིས་བསྐྲུན་གནང་པའི་ཕོ་ཉ་དེ་ཀྱ་ནི། ནུས་མཐུ་ཅན་དིང་ཤེས་པ་ཆེན་པོ་འོད་ཡོད་ཞིག་ཡིན་དིག ཡིན་ནའང་འུ་ཀྱ་ཀྱིས་ཕོ་ཉ་དེ་ཀྱ་ལེ་ཕྱག་མཆོད་པ་བགྱིད་རྒྱུ་མེད་དིག ཅི་ལེ་ཟེར་ནི། དེ་ཡེ་རེ་བསྐྲུན་གནང་མཁན་དེ་ནི་དཀོན་མཆོག་ཁོང་རང་ཡིན་ཕེན། ཁོང་ལེ་པ་རྐྱང་ཕྱག་མཆོད་པ་བགྱིད་དགོས་འོད་དིག</div>
+<div class="m">ཕོ་ཉ་དེ་ཀྱ་ནི་དཀོན་མཆོག་གི་བཀའ་ཕར་ཚུར་ལེ་སྐྱེལ་གྱོ་འོད་དིག དེའི་ནང་ནས་ཕོ་ཉ་ཞིག་གི་མིང་ལེ་སེ་ཏན་ཟིན་འོད་དིག ཡང་ཁོས་བྱས་པའི་ལས་ཡེ་རེ་ལེ་སྐྱོན་དིང་སྡིག་པ་ཞིག་ཟང་མེད་དིག ཡིན་ནའང་ཉི་མ་གཅིག་སེ་ཏན་དིང་། ཡང་དེ་མན་ཡང་ཕོ་ཉ་མ་གཞན་མ་ཁ་ཤས་ཞིག་གིས་དཀོན་མཆོག་ལེ་ངོ་ལོག་བྱས་པི་རྐྱེན་གྱིས། ད་སེ་ཏན་ཁོ་དིང་། ཁོའི་འཁོར་གཡོག་ཀྱ་དཀོན་མཆོག་གི་ཞིང་ཁམས་ལེ་སྡོད་རྒྱུ་དབང་ཆ་མེད་ཕེན། དཀོན་མཆོག་གིས་སེ་ཏན་ཁོ་དིང་ཁོའི་འཁོར་གཡོག་དེ་ཀྱ་ཞིང་ཁམས་ནས་བུད་གནང་པི་དིག </div>
+<div class="m">དེ་ནས་སེ་ཏན་ཁོ་དཀོན་མཆོག་གི་དགྲོ་བོ་བྱུང་གི་མ་ཟད། མི་ཀྱ་ཀྱིས་རང་ལེ་དད་པ་བགྱིད་རྒྱུ་ཆེད་དུ་བློ་འགྱུར་དུ་འཇུག་གྱོ་འོད་དིག ཡང་ཁོའི་རྗེས་ལེ་འབྲང་འགྲོ་མཁན་དེ་ཀྱ་ཀྱི་མིང་ལེ་ད་ལྟ་བདུད་པོ་ཟིན་འོད་དིག  དེ་མ་ཟད། ད་ལྟ་སེ་ཏན་ཁོ་ལེ། མགོ་སྐོར་མཁན། རྗུན་གྱི་རྩ་བ། དགྲ་བོ། གནའ་སྔ་མོའི་སྦྲུལ་ཟིན་མིང་མང་པོ་འོད་དིག ད་ལྟ་སེ་ཏན་ཁོ་དིང་ཁོའི་འཁོར་གཡོག་བདུད་པོ་ཀྱ་ལེ་དཀོན་མཆོག་གིས་ཉེས་པ་བཏང་པི་དིག ཡིན་ནའང་ཉི་མ་ཞིག་དཀོན་མཆོག་གིས་སེ་ཏན་དིང་ཁོའི་འཁོར་གཡོག་དེ་ཀྱ་རྩ་མེད་གཏོང་བགྱི་དིག</div>
+</div>
+</body>
+</html>

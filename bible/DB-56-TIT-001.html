@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6C0000">
+<title>ཐེ་ཏོ། 1</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+// Audio
+$(window).load(function() {
+
+var pop = Popcorn("#audio");
+
+var timings = [
+    { label: "", start: 0, end: 53.91 },
+    { label: "", start: 54.16, end: 58.7 },
+    { label: "1", start: 58.95, end: 72.17 },
+    { label: "2", start: 72.42, end: 83.15 },
+    { label: "3", start: 83.4, end: 91.68 },
+    { label: "4a", start: 91.93, end: 104.53 },
+    { label: "4b", start: 104.78, end: 108.14 },
+    { label: "5", start: 108.39, end: 123.9 },
+    { label: "6-7", start: 124.15, end: 146.73 },
+    { label: "8", start: 146.98, end: 156.44 },
+    { label: "9", start: 156.69, end: 168.94 },
+    { label: "10", start: 169.19, end: 181.13 },
+    { label: "11", start: 181.38, end: 191.7 },
+    { label: "12", start: 191.95, end: 200.16 },
+    { label: "13-14", start: 200.41, end: 215.68 },
+    { label: "15", start: 215.93, end: 227.83 },
+    { label: "16", start: 228.08, end: 238.08 }
+];
+
+initAudioTimings(pop, timings);
+});
+
+$(document).ready(function() {
+
+// Glossary entries
+var glossary = {
+    "G-40": "<div><span class=\"k\">དཀོན་མཆོག</span> དཀོན་མཆོག་ནི་ཡབ་དཀོན་མཆོག་དིང་། སྲས་དཀོན་མཆོག དམ་པའི་ཐུགས་ཉིད་དཀོན་མཆོག་ཡིན་དིག འུ་ཀྱ་ཀྱི་སྐྱབས་མགོན་ཡེ་ཤུའི་ཡབ་ཟང་ཡིན་དིག ཡང་ཇོ་བོ་དཀོན་མཆོག ཡ་ཝཱེ་དཀོན་མཆོག ཀུན་དབང་དཀོན་མཆོག་ཡིན་དིག ཡང་ཁོང་ལེ་བླ་ན་མེད་པའི་དཀོན་མཆོག་ཟང་ཟིན་འོད་དིག དཀོན་མཆོག་ནི་ཡེ་རེ་མཁྱེན་གནང་མཁན་ཡིན་ཕེན། ཁོང་མི་གནས་པའི་ས་ཆ་གཅིག་ཟང་མེད་དིག དཀོན་མཆོག་གིས་འཇིག་རྟེན་ཁམས་འདི་རིང་། ཡང་འདིའི་ནང་ལེ་ཅི་འོད་ཡོད་ཡེ་རེ་བཀོད་གནང་པི་མ་ཟད། སེམས་ཅན་ཡེ་རེ་ལེ་ཚེ་སྲོག་གནང་པི་དིག (འགོད་པ་ལེའུ་ 1 ཨང་ 20 ནས་ 31 ནང་ལེ་གཟིགས་རོགས།) ཁོང་གིས་སྐྱབས་མགོན་ཡེ་ཤུ་ལེ་དད་པ་བགྱིད་མཁན་ཀྱ་ལེ། དམ་པའི་ཐུགས་ཉིད་རྫོང་གནང་གྱོ་འོད་དིག ཡེ་ཤུའི་ཆོས་ལུགས་ཀྱི་དཀོན་མཆོག་ནི་ནང་པའི་ཆོས་ཀྱི་དཀོན་མཆོག་དིང་གཅིག་པ་མ་དིག</div>"
+};
+
+initFootnotes(glossary);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 3 }];
+var hasIntro = true;
+var baseRef  = "DB-56-TIT-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR" lang="dre">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='DB-55-2TI-000.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='DB-56-TIT-000.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;ཐེ་ཏོ།&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;1&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='DB-56-TIT-002.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='DB-57-PHM-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="mt"><span class="mt">༄༅། །ཐེ་ཏོ་ལེ་བྲིས་པའི་ཡི་གེ །</span></div>
+<div class="b"></div>
+<div class="b"></div>
+<div class="cl">ལེའུ་དང་པོ།</div> 
+
+<div class="s"><div id="s1">འཚམས་འདྲི།</div></div><a id="v1"></a>
+<div class="p"><div id="T1" class="txs"><span class="v">1</span><span class="vsp">&nbsp;</span><span class="footnote selectable" id="G-40">དཀོན་མཆོག</span>་གིས་བདམས་པའི་མི་ཀྱ་ཀྱི་དད་སེམས་དེ་མང་དུ་འཕེལ་རྒྱུ་དིང་། བདེན་པའི་ཤེས་བྱ་ལེ་བརྟེན་ཏེ། དད་པ་བགྱིད་མཁན་ཀྱ་ཀྱི་སྤྱོད་ལམ་བཟང་པོས་དཀོན་མཆོག་གི་ཐུགས་མཉེས་པོ་བཟོ་རྒྱུ་ཆེད་དུ། ཕོལ་ལོལ་ང་རང་ནི། དཀོན་མཆོག་གི་ཞབས་ཕྱི་དིང་། སྐྱབས་མགོན་ཡེ་ཤུའི་སྐུ་ཚབ་ཞིག་ལེ་བསྐོས་པི་དིག</div><span id="bookmarks1"></span> <a id="v2"></a><div id="T2" class="txs"><span class="v">2</span><span class="vsp">&nbsp;</span>བདེན་པའི་ཤེས་བྱ་དེ་ལེ་བརྟེན་ཏེ། དད་པ་བགྱིད་མཁན་ཀྱ་ཀྱིས་ཟང་། རྫུན་མི་གསུངས་མཁན་དཀོན་མཆོག་གིས་འཇིག་རྟེན་མ་བཀོད་པའི་སྔོན་ནས་ཕེན། ཞལ་བཞེས་གནང་བའི་མཐའ་མེད་པའི་ཚེ་སྲོག་དེ་འཐོབ་རྒྱུ་ཡིན་དི་རེ་བ་བརྟན་པོ་བཅངས་འོད་དི་མ་ཟད།</div><span id="bookmarks2"></span> <a id="v3"></a><div id="T3" class="txs"><span class="v">3</span><span class="vsp">&nbsp;</span>འུ་ཀྱ་ཀྱི་སྐྱོབ་མཁན་དཀོན་མཆོག་གིས་ང་ལེ་བཀའ་དེ་བཅོལ་གནང་འོད་ཕེན། ད་དུས་དེ་སླེབས་ཏེ། ཁོང་གི་བཀའ་དེ་ངས་བསྟན་པའི་བརྒྱུད་ནས། ཁོང་གིས་མངོན་གསལ་དུ་བསྟན་གནང་པི་དིག</div><span id="bookmarks3"></span> <a id="v4"></a><div id="T4a" class="txs"><span class="v">4</span><span class="vsp">&nbsp;</span>ཡི་གེ་འདི་ནི་འུ་ཀྱ་ཀྱི་དད་སེམས་གཅིག་པ་དིང་། ངའི་བི་ས་ཅོག་འདྲ་བྱུང་བའི་ཐེ་ཏོ་ཁྱོད་རང་ལེ་འབྲི་འོད། ཡབ་དཀོན་མཆོག་དིང་། འུ་ཀྱ་ལེ་སྐྱོབ་མཁན་སྐྱབས་མགོན་ཡེ་ཤུའི་བརྒྱུད་ནས་ཁྱོད་ལེ་ཐུགས་རྗེ་གཟིགས་སྐྱོང་དིང་ཞི་བདེ་འཐོབ་པར་ཤོག</div><span id="bookmarks4"></span></div>
+
+<div class="s"><div id="s2">ཐེ་ཏོའི་ལས་འགན་སྐོར།</div></div><span id="bookmarks4"></span><a id="v5"></a>
+<div class="p"><div id="T5" class="txs"><span class="v">5</span><span class="vsp">&nbsp;</span>ངས་དེ་སྔོན་ཁྱོད་རང་ཀེ་རེ་ཊེ་གླིང་ཕྲན་ལེ་བོར་དགོས་དོན་དེ་ཅི་ཡིན་དིག་ཟེར་ནི། འུ་ཀྱ་ཀྱིས་སྒྲུབ་མ་ནུས་པའི་ལས་དེ་ཡེ་རེ་ཁྱོད་ཀྱིས་དགའ་མོ་སྒྲུབ་དགོས་རྒྱུ་ཆེད་དུ་དིང་། ཡང་ངས་ཁྱོད་ལེ་བཀའ་བཏང་པི་ཅོག་འདྲ་ཡུལ་རེ་རེ་ནས། ཁྱོད་ཀྱིས་ཆོས་ཚོགས་ཀྱི་དོན་ལེ་འགན་འཁུར་པ་བསྐོ་རྒྱུ་དོན་ལེ་ཡིན་དིག</div><span id="bookmarks5"></span> <a id="v6"></a><div id="T6-7" class="txs"><span class="v">6-7</span><span class="vsp">&nbsp;</span>འགོ་ཁྲིད་ཀྱི་འགན་འཁུར་འོད་ཡོད་མི་དེ་ཀྱ་ནི། ཡ་རབས་སྤྱོད་བཟང་འོད་ཡོད་མི་ཞིག་དགོས་པ་འོད་དིག བུད་མེད་གཅིག་གི་ཁྱོ་ག་ཡིན་མཁན། ཁོའི་བུ་ཕྲུག་ཀྱ་ནི་ཕ་མའི་ཁ་ལེ་ཉན་པོ་འོད་ཡོད་ཞིག་དགོས་པ་འོད་དིག འགོ་ཁྲིད་དེ་ཀྱ་ནི་<span class="footnote selectable" id="G-40">དཀོན་མཆོག</span>་གི་ཕྱག་ལས་དེ་སྒྲུབ་མཁན་ཞིག་ཡིན་ཕེན། སྐྱོན་འཛུགས་རྒྱུ་མེད་མེད། རང་འདོད་མི་བགྱིད་མཁན་དིང་། ཁོང་ཁྲོང་ལངས་སླ་མོ་མེད་མཁན། ཆང་རག་བཟི་བཟི་མི་འཐུང་མཁན་དིང་། འཐབ་འཛིང་མི་བགྱིད་མཁན་དིང་། རྒྱུ་ནོར་ལེ་མི་རྔམ་མཁན།</div><span id="bookmarks6-7"></span> <a id="v8"></a><div id="T8" class="txs"><span class="v">8</span><span class="vsp">&nbsp;</span>མགྲོན་པོ་ལེ་སྣེ་ལེན་དགའ་མོ་བགྱིད་མཁན། ལས་བཟང་པོ་བགྱིད་རྒྱུ་ལེ་དགའ་རི། རང་ཚོད་འཛིན་ཐུབ་མཁན། དྲང་པོ། བཟང་པོའི་སྤྱོད་ལམ། རང་འདོད་སྤང་ཐུབ་མཁན་མི་ཞིག་དགོས་པ་འོད་དི་མ་ཟད།</div><span id="bookmarks8"></span> <a id="v9"></a><div id="T9" class="txs"><span class="v">9</span><span class="vsp">&nbsp;</span>ཡང་མི་གཞན་ལེ་ཡང་དག་པའི་བསླབ་བྱ་སྟོན་མཁན་དིང་། བདེན་པའི་གནས་ལུགས་དེ་བརྟན་པོ་འཛིན་དགོས་འོད་དིག འོ་དེ་གི་བྱས་ནི། མི་གཞན་གྱིས་འགེག་རྒོལ་བྱས་པི་དེ་ཀྱ་ལེ་དགག་པ་རྒྱག་ཐུབ་སྟེ། བདེན་པའི་ཆོས་ཀྱིས་མི་གཞན་ལེ་སྐུལ་མ་གཏོང་ཐུབ་ཀྱི་དིག</div><span id="bookmarks9"></span> <a id="v10"></a><div id="T10" class="txs"><span class="v">10</span><span class="vsp">&nbsp;</span>ཅི་ལེ་ཟེར་ནི། འགེག་རྒོལ་བགྱིད་མཁན་མི་མང་པོ་འོད་དི་དིང་། མི་དེ་ཀྱ་ནི་འཆོལ་གཏམ་ཤོད་མཁན་དིང་། མི་ལེ་མགོ་སྐོར་གཏོང་མཁན་ཟང་ཡིན་དི་མ་ཟད། མང་ཆེ་ཤོས་ནི་ཡ་ཧུ་དཱ་པའི་ཆོས་ཀྱི་རྟགས་རྒྱག་དགོས་འོད་ཟེར་མཁན་གྱི་ཕྱོགས་ཁག་ནས་ཡིན་དིག</div><span id="bookmarks10"></span> <a id="v11"></a><div id="T11" class="txs"><span class="v">11</span><span class="vsp">&nbsp;</span>མི་དེ་ཀྱ་ཀྱི་ཁ་བཀག་དགོས་འོད་དིག ཅི་ལེ་ཟེར་ནི། མི་དེ་ཀྱ་ཀྱིས་རང་ལེ་རྒྱུ་ནོར་འཐོབ་རྒྱུ་ཆེད་དུ། ཕན་ཐོགས་མེད་མེད་བསླབ་བྱ་སྟོན་པའི་བརྒྱུད་ནས་མི་ཚང་མང་པོ་ཞིག་གི་དད་པ་ལེ་གནོད་སྐྱེལ་དུ་འཇུག་གྱོ་འོད་དིག</div><span id="bookmarks11"></span> <a id="v12"></a><div id="T12" class="txs"><span class="v">12</span><span class="vsp">&nbsp;</span>ཀེ་རེ་ཊེ་པའི་ལུང་སྟོན་པ་ཞིག་གིས།</div></div>
+<div class="q top-spacing">ཀེ་རེ་ཊེ་པའི་མི་ཀྱ་ཀྱིས། །</div>
+<div class="q">རྒྱུན་དུ་རྫུན་གཏམ་པ་རྐྱང་ཟེར། །</div>
+<div class="q">གཅན་གཟན་གདུག་ཅག་ཅོག་འདྲ། །</div>
+<div class="q">གྲོད་ཆེན་ལེ་ལོ་ཅན་ཞིག་ཡིན་དིག །</div>
+<div class="m">ཟིན་སྨྲས་འོད་དིག<span id="bookmarks12"></span> <a id="v13"></a><div id="T13-14" class="txs"><span class="v">13-14</span><span class="vsp">&nbsp;</span>གོང་ལེ་སྨྲས་པི་དེ་ནི། བདེན་པ་ཡིན་དིག མི་དེ་ཀྱ་ཀྱི་དད་པ་ལེ་སྐྱོན་མེད་མེད་འོང་རྒྱུ་ཆེད་དུ། མི་དེ་ཀྱ་ཀྱིས་ཡ་ཧུ་དཱ་པའི་སྙིང་པོ་མེད་མེད་སྒྲུང་། ཡང་ནི། བདེན་པའི་བསླབ་བྱ་དེ་ལེ་ལྷད་འཛུགས་མཁན་གྱིས་བསྟན་པའི་བསླབ་བྱ་རྫུན་མ་དེ་ལེ། དོ་སྣང་མི་བགྱིད་དི་དོན་ལེ། མི་དེ་ཀྱ་ལེ་ནན་ཏན་གྱིས་སྐུལ་མ་གཏོང་དགོས་འོད་དིག</div><span id="bookmarks13-14"></span> <a id="v15"></a><div id="T15" class="txs"><span class="v">15</span><span class="vsp">&nbsp;</span>ལྷག་བསམ་རྣམ་དག་གི་མི་ཀྱ་ལེ། དངོས་པོ་ཡེ་རེ་ནི་གཙང་མ་ཡིན་དིག ཡིན་ནའང་། མི་གཙང་བ་དིང་དད་པ་མེད་མེད་མི་ཀྱ་ནི། དོན་ཅིའི་བརྒྱུད་ནས་ཟང་གཙང་མ་མེད་མེད་ཡིན་དིག ཅི་ལེ་ཟེར་ནི། མི་དེ་ཀྱི་བློ་སེམས་དེ་ནི་ངན་རུལ་བྱུང་པི་དིག</div><span id="bookmarks15"></span> <a id="v16"></a><div id="T16" class="txs"><span class="v">16</span><span class="vsp">&nbsp;</span>མི་དེ་ཀྱ་ཀྱིས་<span class="footnote selectable" id="G-40">དཀོན་མཆོག</span>་ངོ་ཤེས་གྱོ་འོད་སྨྲས་ནང་། ལས་ངན་པ་བྱས་པའི་བརྒྱུད་ནས་དཀོན་མཆོག་ངོ་མི་ཤེས་འོད་དི་དཔང་བདག་བགྱིད་འོད་དིག མི་དེ་ཀྱ་ནི། སྐྱུག་བྲོ་བོ་དིང་། ཁ་ལེ་མི་ཉན་མཁན་དིང་། ལས་བཟང་པོ་ཅི་ཞིག་ཡིན་ནའང་བགྱིད་མི་ཐུབ་འོད་དིག །</div><span id="bookmarks16"></span></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="https://www.dolpotibetan.com/audio/17.01 TIT_ཐེ་ཏོ། 1.mp3" />
+  </audio>
+</div>
+</div>
+
+<script type='text/javascript' src='./pwa-main.js'></script>
+<script>
+var coll = document.getElementsByClassName("collapsible-button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6C0000">
+<title>མར་ཀུ། i</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 16 }];
+var hasIntro = true;
+var baseRef  = "DB-41-MRK-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR" lang="dre">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='DB-40-MAT-000.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='DB-40-MAT-028.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;མར་ཀུ།&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;i&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='DB-41-MRK-001.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='DB-42-LUK-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="mt"><span class="mt">༄༅། །མར་ཀུས་​བྲིས་པའི་​གཏམ་བཟང་། །</span></div>
+<div class="b"></div>
+<div class="b"></div>
+<div class="imt"><div id="imt1">ངོ་སྤྲོད།</div></div>
+<div class="im">རྩོམ་པ་པོ། ཡོ་ཧ་ནན་མར་ཀུ་ཡིན་དིག བཤད་སྲོལ་བྱས་ནི། ཁོང་རང་ནི་ཕོལ་ལོལ་དིང་པར་ན་པཱ་ཁོ་གཉིས་ཀྱི་ལས་རོགས་ཡིན་དི་མ་ཟད། སྐུ་ཚབ་པེ་ཏྲོའི་དྲུང་ཡིག་ཟང་ཡིན་དིག་ཟིན་འདུག</div>
+<div class="im">རྩོམ་པའི་དུས་དེ་ནི། སྤྱི་ལོ། 60 གཡས་གཡོན་ཚོད་ལེ་བྲིས་འདུག གཏམ་བཟང་བཞི་པོའི་ནང་ནས་མར་ཀུ་ཟེར་མཁན་གྱིས་བྲིས་པའི་གཏམ་བཟང་འདི་ནི་སྔོན་ཤོས་ཞིག་ཡིན་སྲིད་ཀྱི་དིག</div>
+<div class="im">རྩོམ་རིག་གི་རྣམ་གྲངས་ནི། གཏམ་བཟང་ཡིན་དིག</div>
+<div class="im">གཏམ་བཟང་འདི་ཀློག་མཁན་དང་པོ་ནི། ཡ་ཧུ་དཱ་པ་མིན་པའི་ཕྱི་མི་ཡེ་ཤུ་ལེ་དད་པ་བགྱིད་མཁན་ཀྱ་ཡིན་དིག</div>
+<div class="im">གཏམ་བཟང་འདིའི་ནང་དོན་གཙོ་བོ་དེ་ནི། ཡེ་ཤུའི་སྐུ་ཚེ་དིང་། ཁོང་གིས་གསུངས་གནང་པི་དེ་གཉིས་བསྡུས་ཏེ་བྲིས་འོད་དིག གཏམ་བཟང་བྲིས་པའི་དེབ་བཞི་པོའི་ནང་ནས་དེབ་འདི་ནི་ཐུང་ཤོས་ཡིན་དིག ཡང་ཀློག་བདེ་མོ་ཟང་འོད་དིག དེ་མ་ཟད་ཡ་ཝཱེ་དཀོན་མཆོག་གི་ཐར་ལམ་གྱི་སྐོར་ལེ་ཟང་གསལ་པོ་བྱས་ཏེ་བསྟན་འོད་དིག</div>
+</div>
+<script type='text/javascript' src='./pwa-main.js'></script>
+<script>
+var coll = document.getElementsByClassName("collapsible-button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+</script>
+</body>
+</html>

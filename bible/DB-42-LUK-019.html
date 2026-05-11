@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6C0000">
+<title>ལུ་ཀཱ། 19</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+// Audio
+$(window).load(function() {
+
+var pop = Popcorn("#audio");
+
+var timings = [
+    { label: "", start: 0, end: 8.7 },
+    { label: "1", start: 8.95, end: 13.81 },
+    { label: "2", start: 14.06, end: 23.28 },
+    { label: "3", start: 23.53, end: 32.08 },
+    { label: "4", start: 32.33, end: 40.97 },
+    { label: "5", start: 41.22, end: 53.92 },
+    { label: "6", start: 54.17, end: 61.14 },
+    { label: "7", start: 61.39, end: 70.67 },
+    { label: "8", start: 70.92, end: 86.26 },
+    { label: "9", start: 86.51, end: 93.62 },
+    { label: "10a", start: 93.87, end: 102.19 },
+    { label: "10b", start: 102.44, end: 105.37 },
+    { label: "11", start: 105.62, end: 120.14 },
+    { label: "12", start: 120.39, end: 131.81 },
+    { label: "13", start: 132.06, end: 142.78 },
+    { label: "14", start: 143.03, end: 153.1 },
+    { label: "15", start: 153.35, end: 165.65 },
+    { label: "16", start: 165.9, end: 174.11 },
+    { label: "17", start: 174.36, end: 183.19 },
+    { label: "18", start: 183.44, end: 190.88 },
+    { label: "19", start: 191.13, end: 195.72 },
+    { label: "20", start: 195.97, end: 203.82 },
+    { label: "21", start: 204.07, end: 213.45 },
+    { label: "22", start: 213.7, end: 227.51 },
+    { label: "23", start: 227.76, end: 239.97 },
+    { label: "24", start: 240.22, end: 247.77 },
+    { label: "25", start: 248.02, end: 253.49 },
+    { label: "26", start: 253.74, end: 264.32 },
+    { label: "27a", start: 264.57, end: 275.01 },
+    { label: "27b", start: 275.26, end: 279.17 },
+    { label: "28", start: 279.42, end: 286.1 },
+    { label: "29", start: 286.35, end: 296.08 },
+    { label: "30", start: 296.33, end: 308.63 },
+    { label: "31", start: 308.88, end: 318.82 },
+    { label: "32", start: 319.07, end: 324.12 },
+    { label: "33", start: 324.38, end: 332.5 },
+    { label: "34", start: 332.75, end: 337.11 },
+    { label: "35", start: 337.36, end: 349.04 },
+    { label: "36", start: 349.29, end: 355.86 },
+    { label: "37", start: 356.11, end: 369.91 },
+    { label: "38", start: 370.16, end: 381.8 },
+    { label: "39", start: 382.05, end: 395.96 },
+    { label: "40", start: 396.21, end: 406 },
+    { label: "41", start: 406.25, end: 411.9 },
+    { label: "42", start: 412.15, end: 421.98 },
+    { label: "43", start: 422.23, end: 428.88 },
+    { label: "44a", start: 429.13, end: 443.84 },
+    { label: "44b", start: 444.09, end: 448.49 },
+    { label: "45", start: 448.74, end: 460.48 },
+    { label: "46", start: 460.73, end: 472.27 },
+    { label: "47", start: 472.52, end: 489.08 },
+    { label: "48", start: 489.33, end: 499.33 }
+];
+
+initAudioTimings(pop, timings);
+});
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">19.13 </span><span class=\"ft\">གེ་རིག་ཟེར་ལུགས་ནང་ལེ། གསེར་གྱི་ཊང་ཀ་མི་ཟེར་འོད་དིག མི་ནཱ་ཟིན་འོད། དུས་དེ་རྒྱ་མི་ནཱ་གཅིག་ནི། ཉིན་མ་བརྒྱའི་གླ་ཆ་ཡིན་དིག</span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"fr\">19.46 </span><span class=\"ft\">ཚིགས་བཅད་འདི་ནི་ལུང་སྟོན་པ་ཡེ་ཤ་ཡཱས་བྲིས་པའི་ལེའུ་ 56 ཨང་ 7 དིང་། ཡང་ལུང་སྟོན་པ་ཡེ་རེམ་ཡཱས་བྲིས་པའི་ལེའུ་ 7 ཨང་ 11 ནང་ལེ་གཟིགས་རོགས།</span></div>"
+};
+
+initFootnotes(footnotes);
+
+
+// Glossary entries
+var glossary = {
+    "G-105": "<div><span class=\"k\">ཡེ་ཤུ།</span> སྐྱབས་མགོན་ཡེ་ཤུའི་མཚན་ཡིན་དིག ཡང་དེ་མ་ཟད། དཱ་བིད་ཀྱི་སྲས་ཟང་ཟིན་འོད་དིག ཡ་ཧུ་དཱ་པའི་སྐད་ལེ་ཡེ་ཤུ་ནི་ཡེ་ཧོ་ཤུ་ཨ་ཟིན་འོད་དིག ཨ་རམ་སྐད་ལེ་ཡེ་ཤུ་ཟིན་འོད་དིག དེའི་དོན་ནི་སྐྱབས་མགོན་དཀོན་མཆོག་གིས་སྐྱོབ་མཛད་ཟེར་རི་དོན་ཡིན་དིག ཡེ་ཤུ་ཁོང་རང་ནི་དཀོན་མཆོག་གི་སྲས་ཡིན་དི་མ་ཟད། མི་རིགས་ཡེ་རེའི་སྐྱབས་མགོན་ཡིན་དིག</div>",
+    "G-31": "<div><span class=\"k\">ཇོ་བོ།</span> དཀོན་མཆོག་དིང་། ཡང་ནི་ཇོ་བོ་ཡེ་ཤུ་ལེ་བོས་པའི་མཚན་ཞིག་ཡིན་དིག</div>",
+    "G-136": "<div><span class=\"k\">ཨབ་ར་ཧམ།</span> ཡ་ཧུ་དཱ་པའི་མི་རིགས་ཀྱི་མེས་མེས་ཡིན་དིག དཀོན་མཆོག་གིས་ཁོང་ལེ་མི་རིགས་མང་པོའི་མེས་མེས་ལེ་འགྱུར་རི་མ་ཟད། ཨབ་ར་ཧམ་གྱི་བརྒྱུད་ནས་འཛམ་བུ་གླིང་ལེ་བྱིན་རླབས་ཆེ་པོ་འོང་རྒྱུ་ཡིན་དི་ཞལ་ཆད་གནང་པི་དིག ཞལ་ཆེ་དེ་ནི་ཇོ་བོ་ཡེ་ཤུ་ཕེབས་པའི་བརྒྱུད་ནས་བསྒྲུབས་པི་དིག</div>",
+    "G-84": "<div><span class=\"k\">མིའི་བི་ས།</span> མིའི་བི་ས་ནི་ལུང་སྟོན་པ་དཱ་ནི་ཨེལ་གྱི་རྨི་ལམ་ནང་ལེ་སྟོན་གནང་བའི་མི་ཞིག་ཡིན་དི་མ་ཟད། (དཱ་ནི་ཨེལ་ལེའུ་ 7ཨང་ 13 དིང་ 14 ནང་ལེ་གཟིགས་རོགས།) མིའི་བི་ས་ཟེར་རི་ནི། སྐྱབས་མགོན་ཡེ་ཤུའི་མཚན་ཞིག་ཡིན་དིག མཚན་འདི་ཁོང་གིས་རང་ལེ་བཏགས་གནང་པི་དིག དཔེར་ན། ཁོང་གིས་མིའི་བི་ས་ལེ་འཇིག་རྟེན་འདིའི་སྡིག་པའི་ཉེས་པ་དེ་སེལ་རྒྱུ་དབང་ཆ་འོད་ཟིན་རང་གི་སྐོར་ལེ་གསུངས་གནང་པི་དིག</div>",
+    "G-40": "<div><span class=\"k\">དཀོན་མཆོག</span> དཀོན་མཆོག་ནི་ཡབ་དཀོན་མཆོག་དིང་། སྲས་དཀོན་མཆོག དམ་པའི་ཐུགས་ཉིད་དཀོན་མཆོག་ཡིན་དིག འུ་ཀྱ་ཀྱི་སྐྱབས་མགོན་ཡེ་ཤུའི་ཡབ་ཟང་ཡིན་དིག ཡང་ཇོ་བོ་དཀོན་མཆོག ཡ་ཝཱེ་དཀོན་མཆོག ཀུན་དབང་དཀོན་མཆོག་ཡིན་དིག ཡང་ཁོང་ལེ་བླ་ན་མེད་པའི་དཀོན་མཆོག་ཟང་ཟིན་འོད་དིག དཀོན་མཆོག་ནི་ཡེ་རེ་མཁྱེན་གནང་མཁན་ཡིན་ཕེན། ཁོང་མི་གནས་པའི་ས་ཆ་གཅིག་ཟང་མེད་དིག དཀོན་མཆོག་གིས་འཇིག་རྟེན་ཁམས་འདི་རིང་། ཡང་འདིའི་ནང་ལེ་ཅི་འོད་ཡོད་ཡེ་རེ་བཀོད་གནང་པི་མ་ཟད། སེམས་ཅན་ཡེ་རེ་ལེ་ཚེ་སྲོག་གནང་པི་དིག (འགོད་པ་ལེའུ་ 1 ཨང་ 20 ནས་ 31 ནང་ལེ་གཟིགས་རོགས།) ཁོང་གིས་སྐྱབས་མགོན་ཡེ་ཤུ་ལེ་དད་པ་བགྱིད་མཁན་ཀྱ་ལེ། དམ་པའི་ཐུགས་ཉིད་རྫོང་གནང་གྱོ་འོད་དིག ཡེ་ཤུའི་ཆོས་ལུགས་ཀྱི་དཀོན་མཆོག་ནི་ནང་པའི་ཆོས་ཀྱི་དཀོན་མཆོག་དིང་གཅིག་པ་མ་དིག</div>",
+    "G-102": "<div><span class=\"k\">ཡེ་རུ་ས་གླིང་།</span> གནའ་སྔ་མོའི་ཡི་སི་ར་ཨེལ་ལུང་པའི་རྒྱལ་ས་ཞིག་ཡིན་དིག སྐྱབས་མགོན་ཡེ་ཤུ་བཞུགས་པའི་དུས་ལེ་ཡ་ཧུ་དཱ་པའི་མཆོད་ཁང་ཟང་དེ་རུ་འོད་དིག (ས་བཀྲ་ལེ་གཟིགས་རོགས།) ད་ལྟ་ཟང་ཡེ་རུ་ས་གླིང་རྒྱལ་ས་དེ་ཡི་སི་ར་ཨེལ་ལུང་པ་ལེ་འོད་དིག</div>",
+    "G-131": "<div><span class=\"k\">སློབ་མ།</span> སྐྱབས་མགོན་ཡེ་ཤུའི་རྗེས་ལེ་འབྲང་མཁན་མི་མང་པོ་འཇུ་གུ་འོད་ནའང་། མི་དེ་ཀྱ་ཀྱི་ནང་ནས་སློབ་མ་བསྐོས་པའི་མི་བཅུ་གཉིས་འོད་དིག མི་དེ་ཀྱ་ཀྱི་མིང་ནི། མར་ཀུས་བྲིས་པའི་གཏམ་བཟང་ལེའུ་ 3 ཨང་ 16 ནས་ 19 དིང་། ལུ་ཀུས་བྲིས་པའི་གཏམ་བཟང་ལེའུ་ 6 ཨང་ 13 ནས་ 16 དིང་། ཡང་མཛད་པ་ལེའུ་ 1 ཨང་ 13 ནང་ལེ་བྲིས་འོད་དིག ཇོ་བོ་ཡེ་ཤུ་འཆི་བ་ནས་ཡང་དང་སྐུ་གསོན་པོ་བྱུང་བའི་རྗེས་ལེ། ཁོང་གིས་རང་གི་སློབ་མ་དེ་ཀྱ་ལེ། མི་རིགས་ཀུན་ལེ་གཏམ་བཟང་བཤོད་རྒྱུ་ཆེད་དུ་བརྫངས་པི་དིག སློབ་མ་མད་ཐཱ་དིང་ཡོ་ཧ་ནན་ཁོ་གཉིས་ཀྱིས་ཇོ་བོ་ཡེ་ཤུའི་སྐོར་གྱི་ལོ་རྒྱུས་དེ་བྲིས་པི་དིག སློབ་མ་པེ་ཏྲོ་ཁོས་ཆོས་ཚོགས་ཀྱ་ལེ་བཏང་བའི་ཡི་གེ་གཉིས་བྲིས་པི་དིག</div>",
+    "G-74": "<div><span class=\"k\">ཕཱ་རུ་ཤི་པ།</span> གནའ་སྔ་མོ་ཡི་སི་ར་ཨེལ་གྱི་ཆོས་ཀྱི་ཕྱོགས་ཁག་ཅིག་ཡིན་དིག ཕཱ་རུ་ཤི་པའི་བསླབ་བྱ་ཅོག་འདྲ། དཀོན་མཆོག་གི་ཆོས་ཁྲིམས་སྲུང་རྒྱུ་དེ་གལ་ཆེན་པོ་འཇུ་གུ་ཡིན་དིག ཡིན་ནའང་། སྐྱབས་མགོན་ཡེ་ཤུའི་གསུངས་པི་ཅོག་འདྲ། མི་ཀྱ་ཀྱིས་དཀོན་མཆོག་གི་བཀའ་ལེ་ཉན་དགོས་པི་མ་ཟད། དཀོན་མཆོག་ལེ་ལུས་ངག་ཡིད་གསུམ་གྱིས་བརྩི་བཀུར་བགྱིད་དགོས་འོད་དིག་ཟིན་གསུངས་འོད་དིག ཡིན་ནའང་། སྐྱབས་མགོན་ཡེ་ཤུས་ཕཱ་རུ་ཤི་པ་ཀྱ་ལེ། ཡང་ནས་ཡང་དུ་བཀའ་བཀྱོན་གནང་པི་དིག སྐྱབས་མགོན་ཡེ་ཤུ་སྐུ་གྲོངས་ཏེ་ཡང་དང་གསོན་པོ་བྱུང་སྟེ། ཕཱ་རུ་ཤི་པའི་ཆོས་ཀྱི་ཕྱོགས་ཁག་གི་ཁོངས་གཏོགས་ཀྱི་མི་ཁ་ཤས་ཀྱིས་ཟང་ཁོང་ལེ་དད་པ་བྱས་པི་དིག (མཛད་པ་ལེའུ་ 15 ཨང་ 5 ནང་ལེ་གཟིགས་རོགས།)</div>"
+};
+
+initFootnotes(glossary);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 24 }];
+var hasIntro = true;
+var baseRef  = "DB-42-LUK-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR" lang="dre">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='DB-41-MRK-000.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='DB-42-LUK-018.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;ལུ་ཀཱ།&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;19&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='DB-42-LUK-020.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='DB-43-JHN-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="cl">ལེའུ་བཅུ་དགུ།</div> 
+
+<div class="s"><div id="s1">ཡེ་ཤུ་དིང་ཁྲལ་སྡུད་མཁན་སཱ་ཀཱ་ཟེར་མཁན་གྱི་སྐོར།</div></div><a id="v1"></a>
+<div class="p"><div id="T1" class="txs"><span class="v">1</span><span class="vsp">&nbsp;</span>དེ་ནས་​ཡང་​ཡེ་ཤུ་ཡེ་རུ་ཀོ་​ཟེར་​རི་​རྒྱལ་སའི་བརྒྱུད་ནས་​ཕེབས་གནང་རྒྱ།</div><span id="bookmarks1"></span> <a id="v2"></a><div id="T2" class="txs"><span class="v">2</span><span class="vsp">&nbsp;</span>རྒྱལ་ས་​དེ་རུ་​ཁྲལ་​པ་རྐྱང་བསྡུས་ཏེ་ཕྱུག་པོ་བྱུང་བའི་མིང་ལེ་སཱ་ཀཱ་​ཟེར་མཁན་​མི་ཞིག་འོད་དིག ཁོ་རང་ནི་ཁྲལ་སྡུད་མཁན་གྱི་འགོ་དཔོན་​ཟང་​ཡིན་དིག</div><span id="bookmarks2"></span> <a id="v3"></a><div id="T3" class="txs"><span class="v">3</span><span class="vsp">&nbsp;</span>ཁོས་<span class="footnote selectable" id="G-105">ཡེ་ཤུ་</span>​སུ་​ཡིན་​མིན་ལྟ་​འདོད་​བྱུང་​ནའང་​མ་​མཐོང་​པི་​དིག ཅི་ལེ་​ཟེར་​ནི། ཁོ་རང་ནི་​གཟུགས་པོ་​ཆུང་མ་འོད་དི་མ་ཟད​། མི་ཚོགས་​ཟང་མང་པོ་འོད་དིག</div><span id="bookmarks3"></span> <a id="v4"></a><div id="T4" class="txs"><span class="v">4</span><span class="vsp">&nbsp;</span>འོ་དེ་ལེ་བརྟེན་ཏེ། ཁོས་​ཡེ་ཤུའི་​ཕེབས་ལམ་གྱི་​མདུན་​ལེ་​བརྒྱུགས་​ཏེ། སུ་ཀོ་མོར་ཟེར་རི་སྡོང་པོ་​ཆེན་པོ་​ཞིག་​གི་ལྟག་ག་ལེ་​འཛེགས་​ཏེ་​བལྟས་པི་དིག</div><span id="bookmarks4"></span> <a id="v5"></a><div id="T5" class="txs"><span class="v">5</span><span class="vsp">&nbsp;</span>ཡང་ཡེ་ཤུ་​ཟང་སྡོང་པོ་དེའི་ཉེ་འཁོར་ལེ་​ཕེབས་​ཏེ་ཡར་​གཟིགས་པི་མ་ཟད། ཡེ་ཤུས་ཁོ་ལེ། སཱ་ཀཱ། ཁྱོད་རང་མགྱོགས་པོ་​མར་​བོབས་​ལེད་དང་། དེ་རིང་​ང་​ཁྱོད་ཀྱི་​ཁྱིམ་​ལེ་​སྡོད་​ཀྱི་ཡིན་ཟིན་གསུངས་​ཕེན།</div><span id="bookmarks5"></span> <a id="v6"></a><div id="T6" class="txs"><span class="v">6</span><span class="vsp">&nbsp;</span>ཁོ་རང་​མགྱོགས་པོ་​སྡོང་པོ་​ནས་​མར་​བབས་​ཏེ་​དགའ་སྤྲོའི་​ངང་​ནས་​ཡེ་ཤུ་​རང་གི་ནང་ལེ་ཕེབས་བསུ་ཞུས་​པི་​དིག</div><span id="bookmarks6"></span> <a id="v7"></a><div id="T7" class="txs"><span class="v">7</span><span class="vsp">&nbsp;</span>ཡང་མི་​ཀྱ་​ཀྱིས་​གནས་ཚུལ་​དེ་​མཐོང་​ཕེན། ཕན་ཚུན་​གཅིག་​གིས་གཅིག་ལེ། ཁོང་རང་ནི་མི་​སྡིག་ཅན་གྱི་​ཁྱིམ་​ལེ་​མགྲོན་པོ་​འགྲོ་འདུག་ཟིན་མ་དགའ་བའི་​ལབ་གླེང་བགྱིད་འོད་དིག</div><span id="bookmarks7"></span> <a id="v8"></a><div id="T8" class="txs"><span class="v">8</span><span class="vsp">&nbsp;</span>ཡིན་ནའང་། སཱ་ཀཱ་ཁོ་རང་ཡར་ལངས་ཏེ། <span class="footnote selectable" id="G-31">ཇོ་བོ།</span> གཟིགས་​དང་། ང་རང་​ལེ་​འོད་ཡོད་​རྒྱུ་ནོར་​ཕྱེད་ཀ་​སྤྲང་ལོང་​ཀྱ་​ལེ་​སྟེར་གྱི་ཡིན། ཡང་གལ་སྲིད་​ངས་​མི་​ལེ་​མགོ་སྐོར་​བཏང་​སྟེ་​རྒྱུ་ནོར་​བླངས་​འོད་​ནི། ངས་​ལྡ​བ་​བཞི་​ཕ་​ལེ་​གཏོད་​གྱི་​ཡིན་ཟིན་​ཞུས་​ཕེན།</div><span id="bookmarks8"></span> <a id="v9"></a><div id="T9" class="txs"><span class="v">9</span><span class="vsp">&nbsp;</span>ཡེ་ཤུས་ཁོ་ལེ། མི་​འདི་ཟང་མེས་མེས་​<span class="footnote selectable" id="G-136">ཨབ་ར་ཧམ་</span>​གྱི་​རྒྱུད་པ་​ཡིན་ཕེན། ད་​རིང་​ཁྱིམ་​འདིའི་​མི་​ཀྱ་​ཡེ་རེ་ལེ་​ཐར་པ་​ཐོབ་​པི་དིག</div><span id="bookmarks9"></span> <a id="v10"></a><div id="T10a" class="txs"><span class="v">10</span><span class="vsp">&nbsp;</span>ཅི་ལེ་​ཟེར་​ནི། <span class="footnote selectable" id="G-84">མིའི་​བི་ས་</span>​ནི་དཀོན་མཆོག་དིང་ཁ་བྲལ་ལི་མི་ཀྱ་འཚོལ་རྒྱུ་དིང་སྐྱོབ་གནང་རྒྱུ་ཆེད་དུ་འོངས་པི་དིག་​ཟིན་གསུངས་​པི་​དིག</div><span id="bookmarks10"></span></div>
+
+<div class="s"><div id="s2">དངུལ་གྱི་སྒོར་མོ་བཅུའི་དཔེ།</div></div><span id="bookmarks10"></span><a id="v11"></a>
+<div class="p"><div id="T11" class="txs"><span class="v">11</span><span class="vsp">&nbsp;</span>དེ་ནས་​ཡེ་ཤུའི་རྗེས་​ལེ་​འབྲང་མཁན་​མི་ཀྱ་​ཀྱིས་​གསུང་​དེ་​ལེ་ཉན་རྒྱ། ཡེ་ཤུ་ཡེ་རུ་ས་གླིང་ཉེ་འཁོར་ལེ་འོད་ཕེན། མི་དེ་ཀྱ་ཀྱི་<span class="footnote selectable" id="G-40">དཀོན་མཆོག</span>་གི་རྒྱལ་ཁབ་མགྱོགས་པོ་མངོན་གྱི་དིག་བསམས་པི་དིག ཡང་ཁོང་གིས་​དེ་རུ་འོད་ཡོད་མི་ཀྱ་​ལེ་​དཔེ་བརྒྱུད་ནས།</div><span id="bookmarks11"></span> <a id="v12"></a><div id="T12" class="txs"><span class="v">12</span><span class="vsp">&nbsp;</span>མི་​སྐུ་དྲག་​ཞིག་​ལེ་​རྒྱལ་པའི་​དབང་ཆ་འཐོབ་རྒྱུ་ཆེད་དུ། ཐག་​རིང་​གི་​ལུང་པ་​ལེ་​ཞུགས་​འོད་​ཡོད་​རྒྱལ་པོ་​ཆེན་པོའི་​དྲུང་དུ་​ཕྱིན་དི་དིག དེ་ནས་ཁོ་རང་​ལེ་​རྒྱལ་པོའི་​དབང་ཆ་ཐོབ་པི་རྗེས་ལེ། རང་​ཡུལ་​ལེ་​ལོག་​འོང་​དགོས་བསམས་པི་དིག</div><span id="bookmarks12"></span> <a id="v13"></a><div id="T13" class="txs"><span class="v">13</span><span class="vsp">&nbsp;</span>དེ་ནས་ཁོས་རང་གི་​གཡོག་པོ་བཅུ་པོ་​དེ་ཀྱ་རང་གི་མདུན་དུ་བོས་ཏེ། མི་​རེ་རེ་​ལེ་​གསེར་གྱི་ཊང་ཀ་གཅིག་གཏད་དེ། ང་​མ་​སླེབས་​བར་དུ་​ཁྱེད་​ཀྱ་​ཀྱིས་​གསེར་ཊང་ཀ་​དེས་​ཉོ་ཚོང་གྱིས་ཤིག་​སྨྲས་​པི་​དིག<span class="footnote selectable" id="F-0"><sup>*</sup></span></div><span id="bookmarks13"></span> <a id="v14"></a><div id="T14" class="txs"><span class="v">14</span><span class="vsp">&nbsp;</span>ཡིན་ནའང་​། སྐུ་དྲག་དེ་ལེ་མི་​མང་​ཀྱ་​ཀྱིས་འཐད་པོ་འཇུ་གུ་མི་བགྱིད་འོད་དི་མ་ཟད། མི་མང་དེ་ཀྱ་ཀྱིས་ཁོ་རང་​རྒྱལ་པོ་བསྐོས་རྒྱུ་​ལེ་​འདོད་པ་​མེད་​ཟེར་དུ་མི་​ཁ་ཤས་​ཁོའི་​རྗེས་​ལེ་​བརྫངས་​པི་​དིག</div><span id="bookmarks14"></span> <a id="v15"></a><div id="T15" class="txs"><span class="v">15</span><span class="vsp">&nbsp;</span>ཡིན་ནའང་། སྐུ་དྲག་དེ་ལེ་རྒྱལ་པོའི་དབང་ཆ་ཐོབ་པའི་​རྗེས་​ལེ་​ཚུར་​ལོག་​སླེབས་​ཕེན། ཁོས་དངུལ་ཊང་གཏོད་​སའི་​གཡོག་​པོ་​ཀྱ་​ཀྱིས་​ཉོ་​ཚོང་​ཙམ་​བྱས་​འོད་མེད་​ལྟ་​རྒྱུ་​ཆེད་​དུ། མི་རེ་རེ་​བྱས་​ཏེ་​རང་གི་​མདུན་​དུ་​ཤོག་​སྨྲས་​པི་​དིག</div><span id="bookmarks15"></span> <a id="v16"></a><div id="T16" class="txs"><span class="v">16</span><span class="vsp">&nbsp;</span>གཡོག་པོ་​དང་པོ་དེ་ཁོའི་དྲུང་དུ་​འོངས་ཏེ། བདག་པོའོ། ཁྱེད་​ཀྱིས་​ང་ལེ་གནང་བའི་​གསེར་གྱི་ཊང་ཀ་གཅིག་འདི་​ལེ་​ལྡབ་​བཅུ་​ཁེ་བཟང་​འབྱོར་​བྱུང་​ཞུས་​ཕེན།</div><span id="bookmarks16"></span> <a id="v17"></a><div id="T17" class="txs"><span class="v">17</span><span class="vsp">&nbsp;</span>ཁོས་གཡོགས་པོ་དེ་ལེ། འོ་​བྱུང་ང་​། གཡོག་པོ་​བཟང་པོ་​ཁྱོད་ཀྱིས་​དོན་​ཆུང་མ་ཞིག་​ལེ་​ཟང་​སེམས་པ་​དྲང་པོ་​བྱས་ཕེན། ད་​ངས་ཁྱོད་​ལེ་རྒྱལ་ས་​བཅུའི་​དབང་ཆ་དེ་སྟེར་གྱི་ཡིན་སྨྲས་པི་དིག</div><span id="bookmarks17"></span> <a id="v18"></a><div id="T18" class="txs"><span class="v">18</span><span class="vsp">&nbsp;</span>གཡོག་པོ་​གཉིས་པ་དེ་ཟང་འོངས་ཏེ། བདག་པོའོ། ཁྱེད་​ཀྱིས་​ང་ལེ་གནང་བའི་​གསེར་གྱི་ཊང་ཀ་​འདི་​ལེ་​ཁེ་བཟང་​ལྡབ་ལྔ་འབྱོར་​བྱུང་​ཞུས་ཕེན།</div><span id="bookmarks18"></span> <a id="v19"></a><div id="T19" class="txs"><span class="v">19</span><span class="vsp">&nbsp;</span>ཁོས་གཡོག་པོ་དེ་ལེ། ད་ངས་ཁྱོད་ལེ་​ཟང་​རྒྱལ་ས་​ལྔའི་​དབང་ཆ་དེ་སྟེར་གྱི་ཡིན་སྨྲས་པི་དིག</div><span id="bookmarks19"></span> <a id="v20"></a><div id="T20" class="txs"><span class="v">20</span><span class="vsp">&nbsp;</span>གཡོག་པོ་གསུམ་པ་དེ་ཟང་འོངས་ཏེ། བདག་པོའོ། ཁྱེད་​ཀྱི་གསེར་ཊང་ཀ་​འདི་རུ་​འོད་​ཆེ། ངས་​རས་​ཞིག་ལེ་བཏུམས་​ཏེ་​ཅག་ག་​དགའ་མོ་​བྱས་​འོད།</div><span id="bookmarks20"></span> <a id="v21"></a><div id="T21" class="txs"><span class="v">21</span><span class="vsp">&nbsp;</span>ཅི་ལེ་ཟེར་ནི། ཁྱོད་རང་​ནི་​མི་​གཤིས་རྒྱུད་​གྱོང་པོ་​ཞིག་​ཡིན་​དི་​མ་ཟད། དཀའ་ལས་​མ་​བརྒྱབ་​ཏེ​་འབྲས་བུ་​བསྡུ་དི་​དིང་། ས་ངོན་​མ་​བཏབ་སྟེ་​ལོ་ཏོག་​རྔ་​མཁན་​ཁྱེད་​ལེ་​ང་​འཇིགས་​བྱུང་​ཞུས་ཕེན།</div><span id="bookmarks21"></span> <a id="v22"></a><div id="T22" class="txs"><span class="v">22</span><span class="vsp">&nbsp;</span>བདག་པོ་ཁོས་གཡོག་པོ་དེ་ལེ། གཡོག་པོ་​ངན་པ་​ཁྱོད་ཀྱིས་​སྨྲས་པའི་ཚིག་དེ་ལེ་ངས་ཁྲིམས་གཅོད་གཏོང་རྒྱུ་ཡིན། ང་ནི་མི་​གཤིས་རྒྱུད་​གྱོང་པོ་​ཞིག་​ཡིན་​དི་མ་ཟད། ངས་དཀའ་ལས་མ་བརྒྱབ་སྟེ་འབྲས་བུ་བསྡུ་དི་དིང་། ས་ངོན་མ་བཏབ་སྟེ་ལོ་ཏོག་རྔ་མཁན་ཡིན་དི་ཁྱོད་ཀྱིས་ཧ་གོ་​ཕེན།</div><span id="bookmarks22"></span> <a id="v23"></a><div id="T23" class="txs"><span class="v">23</span><span class="vsp">&nbsp;</span>ངས་​ཁྱོད་​ལེ་​གཏད་​དི་གསེར་གྱི་ཊང་ཀ​་འདི་​ཅི་​ལེ་​དངུལ་ཁང་​ནང་ལེ་མི་འབོར་​རི་​ཡིན་དོ། གལ་སྲིད་​གསེར་གྱི་ཊང་ཀ་​འདི་​དངུལ་ཁང་​ནང་ལེ་​འབོར་​འོད་​ནི། ང་རང་​འདི་རུ་​སླེབས་རྒྱ། ང་ལེ་མ་རྩ་དིང་སྐྱེད་ཁ་གཉིས་སྐྱེན་ལེ་ལེན་​རྒྱུ་​འབྱོར་གྱི་མ་​གས་སྨྲས་པི་དིག</div><span id="bookmarks23"></span> <a id="v24"></a><div id="T24" class="txs"><span class="v">24</span><span class="vsp">&nbsp;</span>དེ་ནས་རང་གི་མཐའ་བསྐོར་ལེ་འོད་ཡོད་​གཡོག་པོ་​ཀྱ་​ལེ། ཁོའི་​ལག་​ནས་​གསེར་གྱི་ཊང་ཀ་དེ་​ལོངས་​དང་། གསེར་གྱི་ཊང་ཀ་བཅུ་​འོད་ཡོད་​ཁོ་​ལེ་​གཏོད་​ཅིག་སྨྲས་ཕེན།</div><span id="bookmarks24"></span> <a id="v25"></a><div id="T25" class="txs"><span class="v">25</span><span class="vsp">&nbsp;</span>གཡོག་པོ་དེ་ཀྱ་​ཀྱིས་ཁོང་ལེ། བདག་པོའོ། ཁོ་​ལེ་​སྔོན་ནས་ལྡབ་བཅུ་​ཁེ་བཟང་འོད་​དི་​མ་​གས་​ཞུས་​པི་དིག</div><span id="bookmarks25"></span> <a id="v26"></a><div id="T26" class="txs"><span class="v">26</span><span class="vsp">&nbsp;</span>ཡིན་ནའང་། བདག་པོ་ཁོས་​ང་​ཁྱེད་​ཀྱ་​ལེ་​ཟེར་​རོ། མང་པོ་​འོད་ཡོད་​དེ་​ལེ། ད་​རུང་​མང་ང་​སྟེར་​གྱི་དིག ཡང་ཅི་གང་​མེད་​མཁན་​ཁོ་​ལེ། ཉུང་མ་​འོད་ཡོད་​དི་​ཟང་​ཁོའི་ལག་​ནས་​འཁྱེར་​འགྲོ་​གྱི་དིག</div><span id="bookmarks26"></span> <a id="v27"></a><div id="T27a" class="txs"><span class="v">27</span><span class="vsp">&nbsp;</span>ཡིན་ནའང་། ང་རྒྱལ་པོ་བྱུང་བར་​མི་​དགའ་​མཁན་​དྲག་བོ་​དེ་​ཀྱ་​འདི་རུ་​ཁྲིད་​ལེད་​དང་། ངའི་​མིག་​གི་མཐོང་ས་​ལེ་​སོད་​ཅིག་​སྨྲས་​པི་​དིག་​ཟིན་ཡེ་ཤུས་​སྒྲུང་དེ་གསུངས་​གནང་པི་​དིག</div><span id="bookmarks27"></span></div>
+
+<div class="s"><div id="s3">ཡེ་ཤུ་​ཡེ་རུ་ས་གླིང་​རྒྱལ་ས་​ལེ་​ཕེབས་པ།</div></div><span id="bookmarks27"></span><a id="v28"></a>
+<div class="p"><div id="T28" class="txs"><span class="v">28</span><span class="vsp">&nbsp;</span>དེ་ནས་​ཡེ་ཤུ་​འོ་དེ་གི་གསུངས་​ནུས་པའི་​རྗེས་​ལེ། ཁོང་​དིང་​སློབ་མ་​ཀྱ་​སྟོད་​ཕྱོགས་​ཀྱི་​<span class="footnote selectable" id="G-102">ཡེ་རུ་ས་གླིང་</span>​རྒྱལ་ས་​ལེ་​ཕེབས་ཏེ།</div><span id="bookmarks28"></span> <a id="v29"></a><div id="T29" class="txs"><span class="v">29</span><span class="vsp">&nbsp;</span>ཁོང་རང་​སྐྱུར་རུ་སྡོང་པོའི་​རིའི་​ཉེ་འཁོར་ལེ་འོད་ཡོད་​པེ་ཕཱ་གེ་​དིང་པེ་ཐན་ཡཱ་​ཟེར་​རི་​ཡུལ་​དེ་གཉིས་ལེ་​ཕེབས་​རྒྱུ་​ཆེད་དུ། ཁོང་​གིས་རང་​གི་<span class="footnote selectable" id="G-131">སློབ་མ་</span>​གཉིས་​ལེ།</div><span id="bookmarks29"></span> <a id="v30"></a><div id="T30" class="txs"><span class="v">30</span><span class="vsp">&nbsp;</span>ཁྱེད་​གཉིས་པོ་​ཕཱ་གེ་ཡུལ་​དེ་ལེ་​རྒྱུགས་​དང་། དེ་རུ་སླེབས་ལོང་མེད་ཁྱིམ་ཞིག་​གི་​མདུན་​ལེ། མི་སུ་ཞིག་གིས་​ཟང་​བཞོན་​མྱོང་མེད་མེད་བོང་ཕྲུག་ལོ་གཉིས་ཚོད་ཡིན་མཁན་ཞིག་​བཏགས་འོད་དི་ཁྱེད་གཉིས་ཀྱིས་​མཐོང་​གྱི་​དིག དེ་ནས་​ཁྱེད་​གཉིས་​ཀྱིས་​དེ་​བཀྲོལ་​ཏེ་​འདི་རུ་​ཁྲིད་​ལེད།</div><span id="bookmarks30"></span> <a id="v31"></a><div id="T31" class="txs"><span class="v">31</span><span class="vsp">&nbsp;</span>གལ་སྲིད་​མི་​གཞན་​གྱིས་​ཁྱེད་གཉིས་ལེ་ཅིའི་དོན་ལེ་བཀྲོལ་​ལི་​ཡིན་དོ་​ཟིན་​དྲིས་​ནི། བོང་ཕྲུག་​འདི་ནི་ཉེད་ཀྱ་ཀྱི་​ཇོ་བོ་ལེ་​དགོས་པ་​འདུག་​སྨྲོས་ཤིག་​ཟིན་གསུངས་​ཏེ་བརྫངས་པི་​དིག</div><span id="bookmarks31"></span> <a id="v32"></a><div id="T32" class="txs"><span class="v">32</span><span class="vsp">&nbsp;</span>ཡང་སློབ་མ་​གཉིས་པོ་​དེ་ཟང་ཡུལ་​དེ་རུ་​སླེབས་​ཕེན། ཁོང་​གིས་​གསུངས་​པི་ཅོག་འདྲ་​མཐོང་​ཕེན།</div><span id="bookmarks32"></span> <a id="v33"></a><div id="T33" class="txs"><span class="v">33</span><span class="vsp">&nbsp;</span>ཁོ་གཉིས་ཀྱིས་བོང་ཕྲུག་དེ་​འཀྲོལ་རྒྱུ་བགྱིད་རྒྱ། བོང་ཕྲུག་དེའི་<span class="footnote selectable" id="G-31">བདག་པོ་</span>​ཀྱ་འོངས་ཏེ། ཁྱེད་ཀྱ་ཀྱིས་ཅི་​ལེ་​འདི་འཀྲོལ་​ལི་​ཡིན་དོ་​ཟིན་​དྲིས་ཏེ།</div><span id="bookmarks33"></span> <a id="v34"></a><div id="T34" class="txs"><span class="v">34</span><span class="vsp">&nbsp;</span>ཁོ་​གཉིས་ཀྱིས་​བོང་ཕྲུག་​འདི་​ཉེད་ཀྱ་ཀྱི་​ཇོ་བོ་ཁོང་​ལེ་​དགོས་པ་​འདུག་​སྨྲས་​པི་​རྗེས་ལེ།</div><span id="bookmarks34"></span> <a id="v35"></a><div id="T35" class="txs"><span class="v">35</span><span class="vsp">&nbsp;</span>ཁོ་གཉིས་ཀྱིས་བོང་ཕྲུག་​འདི་​ཡེ་ཤུའི་​དྲུང་དུ་​ཁྲིད་​འོངས་པི་མ་ཟད། ཁོ་གཉིས་ཀྱིས་བོང་ཕྲུག་དེའི་ལྟག་ག་ལེ་རང་གི་​ཕྱི་གོས་བུད་དེ་​བཏིང་​ཕེན། <span class="footnote selectable" id="G-105">ཡེ་ཤུ་</span>​ཟང་བོང་ཕྲུག་དེའི་ལྟག་ག་ལེ་བཅིབས་ཏེ་​ཕེབས་​གནང་པི་དིག</div><span id="bookmarks35"></span> <a id="v36"></a><div id="T36" class="txs"><span class="v">36</span><span class="vsp">&nbsp;</span>ཁོང་​ཕེབས་​འོང་​རྒྱ། མི་​ཀྱ་​ཀྱིས་​ཟང་རང་གི་​ཕྱི་གོས་​བུད་​དེ་​ཁོང་​གི་​ཕེབས་ལམ་​ལེ་​བཏིང་​པི་དིག</div><span id="bookmarks36"></span> <a id="v37"></a><div id="T37" class="txs"><span class="v">37</span><span class="vsp">&nbsp;</span>ཡང་​ཡེ་ཤུ་སྐྱུར་རུ་སྡོང་པོའི་རི་​ནས་​མར་འབབ་འོང་​རྒྱ། ཁོང་​གི་རྗེས་​ལེ་​འབྲང་​མཁན་​མི་ཚོགས་​ཀྱ་ཀྱིས་​ཁོང་གིས་མཛད་པའི་ངོ་མཚར་མང་པོ་མཐོང་​མྱོང་​འོད་​ཕེན། དགའ་རི་​ཆེན་པོ་དིང་​སྐད་ཆེན་པོས་​ངང་​ནས་​<span class="footnote selectable" id="G-40">དཀོན་མཆོག་</span>​ལེ་​བསྟོད་པ་​འབུལ་​ལི་​མ་ཟད།</div><span id="bookmarks37"></span> <a id="v38"></a><div id="T38" class="txs"><span class="v">38</span><span class="vsp">&nbsp;</span>ཇོ་བོ་​དཀོན་མཆོག་​གི་​མཚན་​གྱི་​བརྒྱུད་ནས་​ཕེབས་​པའི་རྒྱལ་པོ་ལེ་བྱིན་རླབས་ཆེའོ། ནམ་མཁའི་ཞིང་ཁམས་ལེ་ཞི་བདེ་དིང་། གཟི་བརྗིད་ཅན་​གྱི་​བླ་ན་མེད་པའི་དཀོན་མཆོག་​ཁོང་​ལེ་​བསྟོད་པ་​འབུལ་​ལོ་​ཟིན་​ཡང་​ནས་​ཡང་​དུ་​སྐད་བརྒྱབ་པི་​དིག</div><span id="bookmarks38"></span> <a id="v39"></a><div id="T39" class="txs"><span class="v">39</span><span class="vsp">&nbsp;</span>ཡང་​མི་ཚོགས་​ཀྱི་​སྐྱེན་​ལེ་​<span class="footnote selectable" id="G-74">ཕཱ་རུ་ཤི་པ་</span>​ཁ་ཤས་​ཞིག་འོད་དི་མ་ཟད། མི་​ཚོགས་ཀྱིས་ཡེ་ཤུ་ལེ་བསྟོད་པ་ཕུལ་ལི་དེ་​ལེ། ཕཱ་རུ་ཤི་པ་ཀྱ་ཀྱིས་མ་དགའ་​ཕེན། ཡེ་ཤུ་​ལེ། སློབ་དཔོན། ཁྱོད་ཀྱི་སློབ་མ་​ཀྱ་​ལེ་​སྐད་​མ་​རྒྱག་​ཟིན་​འཁྲུག་པ་​འཚོལ་​དང་​སྨྲས་​པི་དིག</div><span id="bookmarks39"></span> <a id="v40"></a><div id="T40" class="txs"><span class="v">40</span><span class="vsp">&nbsp;</span>ཡིན་ནའང་། ཡེ་ཤུས་མི་དེ་ཀྱ་ལེ། ང་​ཁྱེད་​ཀྱ་​ལེ་​ཟེར་​རོ། གལ་སྲིད་​མི་​འདི་​ཀྱ་​ཀྱིས་​ཁ་​ཚུམས་​པི་​ཡིན་ནི། ས་སྟེང་​གི་​རྡོ་​འདི་​ཀྱ་​ཀྱིས་​ཟང་​སྐད་​རྒྱག་​གྱི་དིག་​ཟིན་གསུངས་​པི་​དིག</div><span id="bookmarks40"></span></div><span id="bookmarks40"></span><a id="v41"></a>
+<div class="p"><div id="T41" class="txs"><span class="v">41</span><span class="vsp">&nbsp;</span>ཡེ་ཤུ་​ཡེ་རུ་ས་གླིང་​རྒྱལ་སའི་​ཉེ་འཁོར་​ལེ་​ཕེབས་​ཕེན། ཁོང་​གིས་​རྒྱལ་ས་​དེ་ལེ་གཟིགས་ཏེ་བཤུམས་པི་མ་ཟད།</div><span id="bookmarks41"></span> <a id="v42"></a><div id="T42" class="txs"><span class="v">42</span><span class="vsp">&nbsp;</span>ཁོང་གིས་རྒྱལ་ས་​དེའི་​སྐོར་​ལེ། གལ་སྲིད་​ད་རིང་​ཁྱེད་​ཀྱ་ཀྱིས་ཟང་ཞི་བདེའི་​ཐབས་ལམ་​དེ་ཧ་གོ་རོགས་བྱས་ནི་ཅི་​དྲག ཡིན་ནའང་། ད་ལྟ་​རྗེས་ལུད་​ཐེབ་​ཚར་འོད་​ཕེན། ཁྱེད་​ཀྱ་ཀྱིས་ཧ་གོ་​ཐུབ་ཀྱི་མ་དིག</div><span id="bookmarks42"></span> <a id="v43"></a><div id="T43" class="txs"><span class="v">43</span><span class="vsp">&nbsp;</span>དུས་ཡུན་​མང་པོ་​མ་​འགོར་​རི་​ཁྱེད་​ཀྱ་ཀྱི་​དགྲ་བོ་​དེ་​ཀྱ་འོངས་ཏེ། ཁྱེད་ཀྱི་​མཐའ་བསྐོར་​ལེ་གྱང་​སྐོར་​ཏེ་​འགྲོ་​ས་​མེད་​མེད་​བཟོ་གྱི་​དིག</div><span id="bookmarks43"></span> <a id="v44"></a><div id="T44a" class="txs"><span class="v">44</span><span class="vsp">&nbsp;</span>ཁྱེད་​ཀྱ་​ཀྱིས་​དཀོན་མཆོག་གི་​གཟིགས་སྐྱོང་གནང་བའི་དུས་​དེ་ཧ་​མ་​གོ་​ཕེན། ཁྱེད་​ཀྱ་ཀྱི་​དགྲ་བོ་​དེ་ཀྱ་​ཀྱིས་​ཁྱེད་​ཀྱ་​དིང་། ཡང་​གྱང་​ནང་​ལེ་​འོད་​ཡོད་ཁྱེད་ཀྱ་ཀྱི་ཕྲུ་གུ་​ཡེ་རེ་​རྩ་​མེད་​བཏང་​སྟེ། རྩིག་པའི་རྡོ་​ཆུང་མ་​ཞིག་​ཟང་​ལུས་​ཀྱི་མ་དིག་ཟིན་​གསུངས་​པི་​དིག</div><span id="bookmarks44"></span></div>
+
+<div class="s"><div id="s4">ཚོང་པ་ཀྱ་མཆོད་ཁང་ནས་ཕྱི་ལེ་བུད་གནང་བ།</div></div><span id="bookmarks44"></span><a id="v45"></a>
+<div class="p"><div id="T45" class="txs"><span class="v">45</span><span class="vsp">&nbsp;</span>དེ་ནས་​ཡེ་ཤུ་​མཆོད་ཁང་​གི་​དྭངས་རའི་​ནང་ལེ་ཕེབས་གནང་པི་དིག ཡང་​མཆོད་ཁང་གི་དྭངས་རའི་​ནང་​ལེ་​དམར་མཆོད་​འབུལ་རྒྱུ་ཆེད་དུ། ཚོང་རིགས་​སྣ་ཚོགས་​ཚོང་​མཁན་​མི་ཀྱ། མཆོད་ཁང་གི་​ཕྱི་ལེ་​བུད་​གནང་པི་མ་ཟད།</div><span id="bookmarks45"></span> <a id="v46"></a><div id="T46" class="txs"><span class="v">46</span><span class="vsp">&nbsp;</span>ཁོང་གིས་དཀོན་མཆོག་​གི་​གསུང་རབ་ཀྱི་​མདོ་ནང་​ལེ། ངའི་​ཁྱིམ་​འདི་​སྨོན་ལམ་​འདེབས་སའི་ཁང་པ་ལེ་འགྱུར་ཟིན་བྲིས་འོད་དིག ཡིན་ནའང་། ཁྱེད་​ཀྱ་​ཀྱིས་​ཇག་པའི་​ཚང་​ཅོག་​འདྲ་​བཟོས་​འདུག་ཟིན་གསུངས་​པི་​དིག<span class="footnote selectable" id="F-1"><sup>*</sup></span></div><span id="bookmarks46"></span> <a id="v47"></a><div id="T47" class="txs"><span class="v">47</span><span class="vsp">&nbsp;</span>དེའི་རྗེས་ལེ་​ཡེ་ཤུས་​ཉིན་རེ་​བཞིན་​དུ་​མཆོད་ཁང་​གི་​དྭངས་རའི་​ནང་​ལེ་ཆོས་​གསུངས་གནང་​གྱོ་འོད་དིག ཡིན་ནའང་​། ཡ་ཧུ་དཱ་པའི་མཆོད་པ་འབུལ་མཁན་ཀྱ་དིང་​། ཆོས་ཁྲིམས་མཁས་པའི་མི་ཀྱ་དིང་​། ཡང་ཡུལ་གྱི་​དཔོན་པོ་​ཀྱ་​ཀྱིས་​ཡེ་ཤུ་ལེ་ཕྲག་དོག་​བགྱིད་འོད་ཕེན། ཡེ་ཤུ་གསོད་​རྒྱུ་​ཐབས་གཞི་​བཙལ་​ནའང་།</div><span id="bookmarks47"></span> <a id="v48"></a><div id="T48" class="txs"><span class="v">48</span><span class="vsp">&nbsp;</span>མི་ཚོགས་​ཀྱ་​ཀྱིས་​ཡེ་ཤུའི་གསུང་​ལེ་​ཞིབ་པོ་བྱས་ཏེ་ཉན་ཏེ་​བསྡད་​འོད་​ཕེན། ཁོང་ཀྱ་ལེ་གསོད་​རྒྱུ་​ཐབས་​གཞི་​མ་​རྙེད་​དི་​དིག །</div><span id="bookmarks48"></span></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="https://www.dolpotibetan.com/audio/03.19 LUK_ལུ་ཀཱ། 19.mp3" />
+  </audio>
+</div>
+</div>
+
+<script type='text/javascript' src='./pwa-main.js'></script>
+<script>
+var coll = document.getElementsByClassName("collapsible-button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+</script>
+</body>
+</html>
