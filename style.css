@@ -10,21 +10,51 @@ nav ul { list-style: none; display: flex; }
 nav ul li { margin-left: 20px; }
 nav ul li a { text-decoration: none; color: #555; font-weight: 500; }
 
-/* Hero Section with Background Image */
+/* SHARED HERO LAYOUT - Keep this as is */
 .hero { 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/banner.jpg');
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
     color: white; 
     text-align: center; 
-    padding: 100px 20px; /* Increased padding for a taller banner */
+    padding: 100px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 400px; /* Ensures the banner has a good height */
+    min-height: 400px;
 }
+
+/* HOME PAGE BANNER */
+.hero-home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/banner.jpg');
+}
+
+/* STUDY GUIDES PAGE BANNER */
+.hero-study {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/study-banner.jpg');
+}
+
+/* SONGS PAGE BANNER */
+.hero-songs {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/songs-banner.jpg');
+}
+
+/* VIDEO PAGE BANNER */
+.hero-video {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/video-banner.jpg');
+}
+
+/* RESOURCES PAGE BANNER */
+.hero-resources {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/resources-banner.jpg');
+}
+
+/* APP PAGE BANNER */
+.hero-app {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/app-banner.jpg');
+}
+
 
 /* Buttons */
 .btn { padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; transition: 0.3s; }
