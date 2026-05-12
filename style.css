@@ -63,6 +63,8 @@ nav ul li a { text-decoration: none; color: #555; font-weight: 500; }
 .btn.primary:hover { background: #d35400; }
 .btn.secondary:hover { background: white; color: #1a2a3a; }
 
+
+
 /* Grid & Cards */
 h3 { font-size: 2rem; margin-bottom: 20px; text-align: center; }
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
@@ -120,6 +122,14 @@ h3 { font-size: 2rem; margin-bottom: 20px; text-align: center; }
     line-height: 1.8;
 }
 
+.page-icon {
+    max-width: 100%;      /* Ensures the image never exceeds the width of the container */
+    height: auto;     /* Maintains the correct proportions */
+    display: block;
+    vertical-align: middle; /* Aligns the icon with nearby text */
+    margin 0: auto;    /* Adds space between the icon and text */
+}
+
 /* Resource Grid */
 .resource-grid {
     display: grid;
@@ -165,6 +175,17 @@ h3 { font-size: 2rem; margin-bottom: 20px; text-align: center; }
 }
 
 .btn-download {
+    background: #f4f4f4;
+    color: #e67e22;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    border: 1px solid #e67e22;
+    transition: 0.3s;
+}
+
+.btn-video {
     background: #f4f4f4;
     color: #e67e22;
     text-decoration: none;
