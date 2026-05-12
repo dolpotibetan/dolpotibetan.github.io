@@ -181,7 +181,7 @@ h3 { font-size: 2rem; margin-bottom: 20px; text-align: center; }
     padding: 10px;
     border-radius: 6px;
     font-weight: bold;
-    border: 1px solid #e67e22;
+    border: 1px solid #6E1A37;
     transition: 0.3s;
 }
 
@@ -192,18 +192,18 @@ h3 { font-size: 2rem; margin-bottom: 20px; text-align: center; }
     padding: 10px;
     border-radius: 6px;
     font-weight: bold;
-    border: 1px solid #e67e22;
+    border: 1px solid #6E1A37;
     transition: 0.3s;
 }
 
 .btn-download:hover {
-    background: #e67e22;
+    background: #6E1A37;
     color: white;
 }
 
 .active {
-    color: #e67e22 !important;
-    border-bottom: 2px solid #e67e22;
+    color: #6E1A37 !important;
+    border-bottom: 2px solid #6E1A37;
 }
 
 /* Footer */
