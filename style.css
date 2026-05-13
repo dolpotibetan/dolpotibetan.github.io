@@ -211,6 +211,28 @@ footer { text-align: center; padding: 40px 0; background: #333; color: #ccc; fon
 
 /* Responsive Adjustments */
 @media (max-width: 600px) {
-    nav ul { display: none; } /* Simplifies mobile view */
-    .hero h1 { font-size: 2rem; }
+    /* Stack the logo and the menu vertically on phones */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 10px;
+    }
+
+    /* Show the links and center them */
+    nav ul {
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: center;
+        margin-top: 15px;
+        padding: 0;
+    }
+
+    /* Give the buttons some space so they are easy to tap with a thumb */
+    nav ul li {
+        margin: 8px 10px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
 }
